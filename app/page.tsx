@@ -1,23 +1,6 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans">
-      {/* Nav */}
-      <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 py-5 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
-        <span className="text-lg font-bold tracking-tight text-white">piet.dev</span>
-        <div className="flex gap-6 text-sm text-zinc-400">
-          <a href="#projects" className="hover:text-white transition-colors">Projects</a>
-          <a href="#github-guide" className="hover:text-white transition-colors">GitHub Guide</a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            GitHub
-          </a>
-        </div>
-      </nav>
-
       {/* Hero */}
       <section className="flex flex-col items-center justify-center min-h-screen text-center px-6 pt-24 pb-16">
         <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-zinc-700 text-xs text-zinc-400 uppercase tracking-widest">
