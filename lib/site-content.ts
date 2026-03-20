@@ -2,18 +2,18 @@ export const siteContent = {
 
   // ── Global ────────────────────────────────────────────────────
   site: {
-    name: "piet.dev",
-    tagline: "At vero eos et accusamus.",
-    email: "you@example.com",
-    github: "https://github.com",
-    twitter: "#",
+    name: "brad.dev",
+    tagline: "Stories worth telling. Roles worth playing.",
+    email: "contact@bradpitt.com",
+    github: "https://github.com",           // placeholder — he doesn't really have one
+    twitter: "https://x.com/bradpitt",      // placeholder
     linkedin: "#",
   },
 
-  // ── Metadata | Browser Tab (used in layout.tsx) ────────────────────────────
+  // ── Metadata | Browser Tab ─────────────────────────────────────
   metadata: {
-    title:       "piet.dev — Dude, Developer & Builder",
-    description: "p-Money. Writing code, shipping products, building things that matter.",
+    title:       "brad.dev — Actor, Producer, Storyteller",
+    description: "Brad Pitt. Living the roles, producing the stories, chasing the real thing.",
   },
 
   // ── Navigation ────────────────────────────────────────────────
@@ -22,114 +22,106 @@ export const siteContent = {
       { label: "Home",  href: "/" },
       { label: "About", href: "/about" },
     ],
-    cta: { label: "GitHub ↗", href: "https://github.com" },
+    cta: { label: "IMDb ↗", href: "https://www.imdb.com/name/nm0000093/" },
   },
 
   // ── Home — Hero ───────────────────────────────────────────────
   hero: {
-    badge:    "Developer & Builder",
-    headline: "Building things ",
-    // The word that receives the gradient-text treatment
-    accent:   "work.",
-    body:     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    badge:    "Actor & Producer",
+    headline: "Brad is still",
+    accent:   "fighting.",
+    body:     "From a hitchhiker in Thelma & Louise to Cliff Booth, from Tyler Durden's chaos to Billy Beane's quiet obsession — I've spent decades chasing characters that stay with you. Producing stories that matter through Plan B. Still learning, still working, still here.",
     cta: {
-      primary:   { label: "View Projects", href: "#projects" },
-      secondary: { label: "About Me",      href: "/about" },
+      primary:   { label: "View Films", href: "#projects" },
+      secondary: { label: "About Me",   href: "/about" },
     },
   },
 
-  // ── Home — Projects section ───────────────────────────────────
+  // ── Home — Projects section (iconic films + recent) ───────────
   projects: {
-    badge:   "Featured Work",
-    heading: "Projects",
-    cta:     { label: "View all", href: "#" },
+    badge:   "Selected Work",
+    heading: "Films",
+    cta:     { label: "See Full Filmography", href: "https://www.imdb.com/name/nm0000093/" },
     items: [
       {
         id:      "item-1",
-        tag:     "Next.js",
-        title:   "This Website",
-        summary: "Built with Next.js, Tailwind CSS, and a deliberate design system. Clean code, shipped fast.",
-        url:     "#",
-        image:   "https://images.unsplash.com/photo-1555066931-4365d14431b9?w=800&q=80",
+        tag:     "2019",
+        title:   "Once Upon a Time in Hollywood",
+        summary: "Cliff Booth — the coolest stuntman in Hollywood. Oscar for Best Supporting Actor. Still feels like yesterday.",
+        url:     "https://www.imdb.com/title/tt7131622/",
+        image:   "https://images.unsplash.com/photo-1594908900578-2d6a2a2c3d4e?w=800&q=80", // placeholder — imagine Cliff vibe
       },
       {
         id:      "item-2",
-        tag:     "TypeScript",
-        title:   "Something Cool",
-        summary: "Replace this with your actual project. One punchy sentence that explains what it does and why it matters.",
+        tag:     "1999",
+        title:   "Fight Club",
+        summary: "Tyler Durden. First rule still applies. The film that broke rules and started conversations.",
         url:     "#",
-        image:   "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+        image:   "https://images.unsplash.com/photo-1588516903722-987b976cbedc?w=800&q=80",
       },
       {
         id:      "item-3",
-        tag:     "Open Source",
-        title:   "Another Banger",
-        summary: "Ship first, explain later. The work speaks. Add the description once the product earns it.",
+        tag:     "2011",
+        title:   "Moneyball",
+        summary: "Billy Beane — changed how the game thinks about value. Produced it too. Numbers never lie.",
         url:     "#",
-        image:   "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+        image:   "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
       },
       {
         id:      "item-4",
-        tag:     "Node.js",
-        title:   "A Fourth Thing",
-        summary: "Four projects means you're serious. Or at least consistent. Fill this with something worth reading.",
+        tag:     "2008",
+        title:   "The Curious Case of Benjamin Button",
+        summary: "A man aging backward. One of the most beautiful, heartbreaking things I've ever been part of.",
         url:     "#",
-        image:   "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&q=80",
+        image:   "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?w=800&q=80",
       },
       {
         id:      "item-5",
-        tag:     "Full-Stack",
-        title:   "The Big One",
-        summary: "Every portfolio needs a showstopper. This is that slot. Make it count.",
+        tag:     "Upcoming",
+        title:   "The Adventures of Cliff Booth",
+        summary: "Back as Cliff. David Fincher directing, Tarantino script. Hitting Netflix in 2026. Buckle up.",
         url:     "#",
-        image:   "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?w=800&q=80",
+        image:   "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
       },
     ],
   },
 
-  // ── Home — GitHub Guide ───────────────────────────────────────
+  // ── Home — GitHub Guide (adapted to "Hollywood Guide" or keep light git joke?) ──
   githubGuide: {
-    badge:   "Git Guide",
-    heading: "Push to",
-    // Word that receives gradient-text
-    accent:  "GitHub",
-    proTip:  "If your default branch is `master` instead of `main`, rename it first: `git branch -M main`",
+    badge:   "Quick Tip",
+    heading: "How to Survive",
+    accent:  "Hollywood",
+    proTip:  "Your best performance is the one no one sees coming. Prep hard, listen harder.",
     steps: [
       {
         step:        "01",
-        title:       "Create a repo on GitHub",
-        description: 'Go to github.com → click + → "New repository". Name it, leave it empty (no README), click Create.',
-        code:        null as string | null,
+        title:       "Find the story",
+        description: "The script chooses you as much as you choose it. Read everything.",
+        code:        null,
       },
       {
         step:        "02",
-        title:       "Initialize git",
-        description: "Inside your project folder:",
-        code:        "git init",
+        title:       "Commit fully",
+        description: "No half-measures. Dive in — accent, physicality, truth.",
+        code:        "be present",
       },
       {
         step:        "03",
-        title:       "Stage your files",
-        description: "Add everything to the staging area:",
-        code:        "git add .",
+        title:       "Collaborate",
+        description: "Great directors, great co-stars, great crew. Ego checks at the door.",
+        code:        null,
       },
       {
         step:        "04",
-        title:       "First commit",
-        description: "Commit with a clear message:",
-        code:        'git commit -m "Initial commit"',
+        title:       "Produce when you can",
+        description: "Telling stories you believe in — Plan B was born from that.",
+        code:        null,
       },
       {
         step:        "05",
-        title:       "Add the remote",
-        description: "Connect your local repo to GitHub:",
-        code:        "git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git",
-      },
-      {
-        step:        "06",
-        title:       "Push",
-        description: "Send your code to GitHub:",
-        code:        "git push -u origin main",
+        title:       "Stay grounded",
+        description: "Oklahoma roots. Family. Real life outside the lights.",
+        code:        null,
       },
     ],
   },
@@ -137,32 +129,32 @@ export const siteContent = {
   // ── About — Hero ──────────────────────────────────────────────
   about: {
     badge:       "About Me",
-    headline:    "The person",
-    // Phrase that receives the gradient-text + underline treatment
-    accent:      "behind the code.",
+    headline:    "The man",
+    accent:      "behind the roles.",
     bio: [
-      "Hey — I'm Piet. I'm a developer who loves building things that actually work. Not just technically correct things — things people enjoy using.",
-      "I've been writing code long enough to know that the hard part is rarely the code itself. It's figuring out what to build, keeping it simple, and shipping it. I'm obsessed with all three.",
+      "Hey — I'm Brad. Born in Shawnee, Oklahoma. Raised in Springfield, Missouri. Left journalism school two credits shy to chase acting in LA.",
+      "Been lucky enough to play cowboys, fighters, con men, astronauts, zombies, producers — and everything in between. The real win is when the work means something after the credits roll.",
     ],
     facts: [
-      { label: "Name",       value: "Piet Oosthuizen" },
-      { label: "Based",      value: "South Africa" },
-      { label: "Specialty",  value: "Full-Stack Web" },
-      { label: "Available",  value: "For hire" },
+      { label: "Name",      value: "William Bradley Pitt" },
+      { label: "Born",      value: "December 18, 1963 — Shawnee, Oklahoma" },
+      { label: "Based",     value: "Los Angeles" },
+      { label: "Specialty", value: "Character acting & producing" },
+      { label: "Status",    value: "Still working" },
     ],
   },
 
-  // ── About — Stack ─────────────────────────────────────────────
+  // ── About — Stack (adapted to "tools of the trade") ───────────
   stack: {
-    badge:   "Tech Stack",
+    badge:   "Tools of the Trade",
     heading: "What I work with",
     items: [
-      { name: "TypeScript",  icon: "TS", desc: "Typed everything." },
-      { name: "React",       icon: "Re", desc: "Component thinking." },
-      { name: "Next.js",     icon: "N↑", desc: "Production React." },
-      { name: "Tailwind CSS",icon: "TW", desc: "Utility-first." },
-      { name: "Node.js",     icon: "No", desc: "Server-side JS." },
-      { name: "Git & GitHub",icon: "Gi", desc: "Version control." },
+      { name: "David Fincher",  icon: "DF", desc: "Precision. Intensity." },
+      { name: "Quentin Tarantino", icon: "QT", desc: "Dialogue. Vision." },
+      { name: "Plan B Ent.",   icon: "PБ", desc: "Producing stories that matter." },
+      { name: "Method Acting", icon: "MA", desc: "Truth over comfort." },
+      { name: "Scripts",       icon: "Sc", desc: "The starting point." },
+      { name: "Collaborators", icon: "Co", desc: "Best part of the job." },
     ],
   },
 
@@ -170,79 +162,76 @@ export const siteContent = {
   principles: {
     badge:   "How I Work",
     heading: "Principles I",
-    // Word that receives gradient-text
-    accent:  "actually follow",
+    accent:  "actually live by",
     items: [
       {
         number: "01",
-        title:  "Ship Fast",
-        body:   "A working thing beats a perfect idea. I bias toward action and iterate in the open. Done and deployed beats theoretically elegant.",
+        title:  "Commit or Don't Bother",
+        body:   "Half-in is worse than all-out. Go deep or go home.",
       },
       {
         number: "02",
-        title:  "Keep It Simple",
-        body:   "I write the least code that gets the job done — and delete it when it's no longer needed. Complexity is a cost. Pay it deliberately.",
+        title:  "Story First",
+        body:   "Character, visuals, box office — all matter. But the story is what lasts.",
       },
       {
         number: "03",
-        title:  "Read the Docs",
-        body:   "Seriously. Half the bugs in the world exist because someone skimmed. I read actual documentation before writing a single line.",
+        title:  "Listen More Than You Talk",
+        body:   "On set, in life. The best ideas usually come from someone else.",
       },
       {
         number: "04",
-        title:  "Collaborate Openly",
-        body:   "Good code is a team sport. I share early, ask questions without ego, and write code as if the next person who reads it is my future self.",
+        title:  "Stay Curious",
+        body:   "62 and still learning. New directors, new scripts, new ways to tell stories.",
       },
     ],
   },
 
   // ── About — CTA ───────────────────────────────────────────────
   cta: {
-    badge:    "Get in Touch",
-    heading:  "Want to work together?",
-    body:     "I'm always open to interesting projects and conversations. If you have something worth building, let's talk.",
-    primary:  { label: "Email Me",  href: "mailto:you@example.com" },
-    secondary:{ label: "GitHub ↗",  href: "https://github.com" },
+    badge:    "Let's Talk",
+    heading:  "Got a story worth telling?",
+    body:     "I'm always open to great scripts, interesting directors, and real conversations. If you've got something special, reach out.",
+    primary:  { label: "Email Me",   href: "mailto:contact@bradpitt.com" },
+    secondary:{ label: "IMDb ↗",     href: "https://www.imdb.com/name/nm0000093/" },
   },
 
   // ── Footer ────────────────────────────────────────────────────
   footer: {
-    logo:    { url: "/", title: "piet.dev" },
-    tagline: "Writing code. Shipping products. Building things that matter.",
+    logo:    { url: "/", title: "brad.dev" },
+    tagline: "Telling stories. Producing truth. Still chasing the next great role.",
     menu: [
       {
         title: "Navigate",
         links: [
           { text: "Home",         url: "/" },
           { text: "About",        url: "/about" },
-          { text: "Projects",     url: "/#projects" },
-          { text: "GitHub Guide", url: "/#github-guide" },
+          { text: "Films",        url: "/#projects" },
+          { text: "Quick Tips",   url: "/#github-guide" },
         ],
       },
       {
         title: "Connect",
         links: [
-          { text: "GitHub ↗",  url: "https://github.com" },
-          { text: "Email",     url: "mailto:you@example.com" },
-          { text: "Twitter ↗", url: "#" },
-          { text: "LinkedIn ↗",url: "#" },
+          { text: "IMDb ↗",       url: "https://www.imdb.com/name/nm0000093/" },
+          { text: "Email",        url: "mailto:contact@bradpitt.com" },
+          { text: "X / Twitter ↗",url: "#" },
         ],
       },
       {
-        title: "Stack",
+        title: "Collaborators",
         links: [
-          { text: "Next.js",       url: "#" },
-          { text: "Tailwind CSS",  url: "#" },
-          { text: "TypeScript",    url: "#" },
-          { text: "Framer Motion", url: "#" },
+          { text: "Plan B",       url: "#" },
+          { text: "David Fincher",url: "#" },
+          { text: "Quentin Tarantino", url: "#" },
         ],
       },
       {
-        title: "Projects",
+        title: "Iconic Roles",
         links: [
-          { text: "This Website",  url: "#" },
-          { text: "Something Cool",url: "#" },
-          { text: "Another Banger",url: "#" },
+          { text: "Cliff Booth",  url: "#" },
+          { text: "Tyler Durden", url: "#" },
+          { text: "Billy Beane",  url: "#" },
         ],
       },
     ],
