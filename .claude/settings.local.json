@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node -e \"require\\(''./node_modules/embla-carousel-react''\\); require\\(''./node_modules/class-variance-authority''\\); require\\(''./node_modules/@radix-ui/react-slot''\\); require\\(''./node_modules/lucide-react''\\); console.log\\(''all deps OK''\\)\")"
+    ]
+  }
+}

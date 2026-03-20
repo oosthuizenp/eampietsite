@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 const links = [
   { href: "/", label: "Home" },
@@ -10,35 +11,54 @@ const links = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-8 py-5 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
-      <Link href="/" className="text-lg font-bold tracking-tight text-white hover:text-violet-400 transition-colors">
-        piet.dev
-      </Link>
-      <div className="flex items-center gap-1">
-        {links.map(({ href, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={`px-4 py-1.5 rounded-full text-sm transition-colors ${
-              pathname === href
-                ? "bg-zinc-800 text-white font-medium"
-                : "text-zinc-400 hover:text-white"
-            }`}
-          >
-            {label}
-          </Link>
-        ))}
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-4 px-4 py-1.5 rounded-full border border-zinc-700 text-sm text-zinc-400 hover:text-white hover:border-zinc-500 transition-colors"
+    <header
+      className={`sticky top-0 z-50 bg-[#FAFAFA]/90 backdrop-blur-sm transition-all duration-200 ${
+        scrolled ? "shadow-sm border-b border-[#E2E8F0]" : ""
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="font-display text-xl text-[#0F172A] hover:text-[#0052FF] transition-colors duration-200"
         >
-          GitHub ↗
-        </a>
+          piet.dev
+        </Link>
+
+        {/* Nav */}
+        <nav aria-label="Primary navigation" className="flex items-center gap-1">
+          {links.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className={`px-4 py-2 rounded-lg text-sm transition-all duration-200 ${
+                pathname === href
+                  ? "text-[#0052FF] bg-[#0052FF]/5 font-medium"
+                  : "text-[#64748B] hover:text-[#0F172A] hover:bg-[#F1F5F9]"
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-3 px-4 py-2 rounded-xl text-sm font-medium text-white bg-gradient-to-r from-[#0052FF] to-[#4D7CFF] shadow-sm hover:-translate-y-0.5 hover:shadow-accent transition-all duration-200"
+          >
+            GitHub ↗
+          </a>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
